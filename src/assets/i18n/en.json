@@ -9,8 +9,8 @@
   "ABOUT": {
     "PHOTO_ALT": "Profile photo",
     "TITLE": "Why me",
-    "TEXT_PART1": "I bring a strong passion for web development and combine creative design with technical implementation. My focus is currently on frontend development, where I have already gained practical experience in implementing modern, user-friendly and responsive interfaces.",
-    "TEXT_PART2": "To complete my profile, I am currently taking backend training, which will enable me to develop complex server-side logic, database connections and interfaces in the future. This way, I combine a deep understanding of the entire web architecture – from appealing UI to performant backend logic.",
+    "TEXT_PART1": "I have a strong passion for web development and combine creative design with technical implementation. My current focus is on frontend development, where I have already gained practical experience in developing modern, user-friendly and responsive interfaces.",
+    "TEXT_PART2": "To expand my profile, I am currently completing backend training. In the future, I will be able to develop complex server-side logic, database connections and interfaces and thus combine a holistic understanding of web architecture - from the appealing UI to the high-performance backend logic.",
     "I_AM_TITLE": "I am",
     "BUTTON": "Let's talk",
     "ICONS": {
@@ -45,12 +45,12 @@
     "EVELYN_MARX": {
       "NAME": "Ahmet B.",
       "PROJECT": "Join",
-      "QUOTE": "“He is a trustworthy teamplayer and can cope with the stress of deadlines. Structured work and clear code.”"
+      "QUOTE": "“He is a trustworthy team player who remains confident even under time pressure. His structured way of working is reflected in clear and understandable code.”"
     },
     "JAMES_RUGMAN": {
       "NAME": "Leon-Georg Leuning",
       "PROJECT": "Kochwelt",
-      "QUOTE": "“He is a reliable and friendly person. Works in a structured way and writes clear code. I recommend him as a colleague.”"
+      "QUOTE": "“He is a reliable and pleasant personality. His way of working is structured and his code is characterized by clarity. I can highly recommend him as a colleague.”"
     }
   },
   "LEGAL": {

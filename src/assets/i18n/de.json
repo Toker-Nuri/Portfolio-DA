@@ -9,8 +9,8 @@
   "ABOUT": {
     "PHOTO_ALT": "Profilfoto",
     "TITLE": "Warum ich",
-    "TEXT_PART1": "Ich bringe eine starke Leidenschaft für Webentwicklung mit und verbinde kreatives Design mit technischer Umsetzung. Mein Schwerpunkt liegt aktuell im Frontend Development, wo ich bereits praxisnahe Erfahrung in der Umsetzung moderner, benutzerfreundlicher und responsiver Interfaces gesammelt habe.",
-    "TEXT_PART2": "Um mein Profil zu komplettieren, absolviere ich derzeit eine Backend-Schulung, wodurch ich künftig auch komplexe serverseitige Logiken, Datenbankanbindungen und Schnittstellen entwickeln kann. So vereine ich ein tiefes Verständnis für die gesamte Web-Architektur – vom ansprechenden UI bis zur performanten Backend-Logik.",
+    "TEXT_PART1": "Ich habe eine ausgeprägte Leidenschaft für Webentwicklung und verbinde kreatives Design mit technischer Umsetzung. Mein aktueller Schwerpunkt liegt im Frontend Development, in dem ich bereits praktische Erfahrung bei der Entwicklung moderner, benutzerfreundlicher und responsiver Interfaces gesammelt habe.",
+    "TEXT_PART2": "Zur Erweiterung meines Profils absolviere ich derzeit eine Backend-Schulung. Dadurch werde ich künftig in der Lage sein, auch komplexe serverseitige Logiken, Datenbankanbindungen und Schnittstellen zu entwickeln und so ein ganzheitliches Verständnis der Web-Architektur – vom ansprechenden UI bis zur performanten Backend-Logik – zu vereinen.",
     "I_AM_TITLE": "Ich bin",
     "BUTTON": "Lass uns sprechen",
     "ICONS": {
@@ -45,12 +45,12 @@
     "EVELYN_MARX": {
       "NAME": "Ahmet B.",
       "PROJECT": "Join",
-      "QUOTE": "„Er ist ein vertrauenswürdiger Teamplayer und kann mit dem Stress von Deadlines umgehen. Strukturiertes Arbeiten und klarer Code.“"
+      "QUOTE": "„Er ist ein vertrauenswürdiger Teamplayer, der auch unter Zeitdruck souverän bleibt. Seine strukturierte Arbeitsweise zeigt sich in klarem und verständlichem Code.“"
     },
     "JAMES_RUGMAN": {
       "NAME": "Leon-Georg Leuning",
       "PROJECT": "Kochwelt",
-      "QUOTE": "„Er ist eine verlässliche und freundliche Person. Arbeitet strukturiert und schreibt klaren Code. Ich empfehle ihn als Kollegen.“"
+      "QUOTE": "„Er ist eine zuverlässige und angenehme Persönlichkeit. Seine Arbeitsweise ist strukturiert, und sein Code zeichnet sich durch Klarheit aus. Als Kollegen kann ich ihn sehr empfehlen.“"
     }
   },
   "LEGAL": {
