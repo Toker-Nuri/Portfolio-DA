@@ -1,0 +1,215 @@
+/* Global Styles: src/styles.scss */
+
+
+/* Verhindert horizontales Scrollen durch Box-Sizing und Overflow */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+@font-face {
+  font-family: 'Roboto Mono';
+  src: url('/assets/fonts/Roboto_Mono/static/RobotoMono-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto Mono';
+  src: url('/assets/fonts/Roboto_Mono/static/RobotoMono-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Handjet';
+  src: url('/assets/fonts/Handjet/static/Handjet-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Handjet Bold */
+@font-face {
+  font-family: 'Handjet';
+  src: url('/assets/fonts/Handjet/static/Handjet-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;        /* Versteckt horizontalen Überlauf */
+  width: 100%;
+  height: 100%;
+  font-family: 'Roboto Mono', monospace;
+  scroll-behavior:smooth;
+}
+
+
+
+
+
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Sticky Footer Layout */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+app-root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main, .main-content, router-outlet {
+  flex: 1;
+}
+
+app-footer, .site-footer {
+  margin-top: auto;
+}
+
+/* Spezifische Styling für Datenschutz und Impressum */
+.privacy-policy, .legal-notice {
+  min-height: calc(100vh - 200px);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Gradient über die gesamte Seite */
+body {
+  background: linear-gradient(
+    180deg,
+    #0a0a23 0%,
+    #0d0d40 25%,
+    #0f0f60 50%,
+    #0d0d40 75%,
+    #0a0a23 100%
+  ) fixed no-repeat;
+  background-size: cover;
+  color: #f9fafb;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Scroll-Offset für perfekte Vollbild-Sektionen */
+#about {
+  scroll-margin-top: 0;
+}
+
+#skills {
+  scroll-margin-top: 0;
+}
+
+#projects {
+  scroll-margin-top: 0;
+}
+
+#contact {
+  scroll-margin-top: 0;
+}
+
+/* Footer Scroll-Ziel */
+#footer {
+  scroll-margin-top: 0;
+}
+
+
+/* Globale Container-Klasse */
+.container {
+  width: 100%;
+  max-width: 1200px;   /* oder eine andere Maximalbreite deiner Wahl */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;  /* Abstand an den Seiten */
+  padding-right: 1rem;
+}
+
+/* Media Query für sehr kleine Bildschirme (300px-400px) */
+@media (max-width: 400px) {
+  .container {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  
+  body {
+    font-size: 14px;
+  }
+  
+  #about {
+    scroll-margin-top: 0;
+  }
+  
+  #skills {
+    scroll-margin-top: 0;
+  }
+  
+  #projects {
+    scroll-margin-top: 0;
+  }
+  
+  #contact {
+    scroll-margin-top: 0;
+  }
+  
+  #footer {
+    scroll-margin-top: 0;
+  }
+}
+
+/* Scroll-Animationen */
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in-left {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in-right {
+  opacity: 0;
+  transform: translateX(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.scale-in {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.slide-in-bottom {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Animation aktiv */
+.animate {
+  opacity: 1 !important;
+  transform: translateY(0) translateX(0) scale(1) !important;
+}

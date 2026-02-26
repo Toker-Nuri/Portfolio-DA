@@ -1,0 +1,134 @@
+{
+  "NAV": { "WHY_ME": "Warum ich", "SKILLS": "Fähigkeiten", "PROJECTS": "Projekte", "CONTACT": "Kontakt" },
+  "HEADER": { "LOGO": "<NT>" },
+  "HERO": {
+    "CONTACT": "Kontaktiere mich",
+    "SUBTITLE": "Frontend-Entwickler",
+    "SCROLL_ALT": "Zum Abschnitt „Über mich“ scrollen"
+  },
+  "ABOUT": {
+    "PHOTO_ALT": "Profilfoto",
+    "TITLE": "Warum ich",
+    "TEXT_PART1": "Ich bringe eine starke Leidenschaft für Webentwicklung mit und verbinde kreatives Design mit technischer Umsetzung. Mein Schwerpunkt liegt aktuell im Frontend Development, wo ich bereits praxisnahe Erfahrung in der Umsetzung moderner, benutzerfreundlicher und responsiver Interfaces gesammelt habe.",
+    "TEXT_PART2": "Um mein Profil zu komplettieren, absolviere ich derzeit eine Backend-Schulung, wodurch ich künftig auch komplexe serverseitige Logiken, Datenbankanbindungen und Schnittstellen entwickeln kann. So vereine ich ein tiefes Verständnis für die gesamte Web-Architektur – vom ansprechenden UI bis zur performanten Backend-Logik.",
+    "I_AM_TITLE": "Ich bin",
+    "BUTTON": "Lass uns sprechen",
+    "ICONS": {
+      "LOCATED": {
+        "IN_CITY": "Ansässig in Isny",
+        "IN_CITY_HOVER": "Ansässig in Isny"
+      },
+      "OPEN_TO_WORK_REMOTE": "Offen für Remote-Arbeit",
+      "OPEN_TO_WORK_REMOTE_HOVER": "Offen für Remote-Arbeit",
+      "OPEN_TO_RELOCATE": "Offen für Umzug",
+      "OPEN_TO_RELOCATE_HOVER": "Offen für Umzug"
+    }
+  },
+  "SKILLS": { "TITLE": "Fähigkeiten", "ICON_ALT": "{{skill}}-Symbol" },
+  "PROJECTS": {
+    "TITLE": "Meine Projekte",
+    "GITHUB": "GitHub",
+    "LIVE_TEST": "Live-Test",
+    "IMAGE_ALT": "Screenshot von",
+    "JOIN": {
+      "TITLE": "Join",
+      "DESCRIPTION": "Task-Manager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben per Drag & Drop, weise Nutzer:innen und Kategorien zu."
+    },
+    "EL_POLLO_LOCO": {
+      "TITLE": "El Pollo Loco",
+      "DESCRIPTION": "Jump, run und throw-Spiel basierend auf OOP-Ansatz. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen das verrückte Huhn zu kämpfen."
+    }
+  },
+  "TESTIMONIALS": {
+    "HEADING": "Ein Teamplayer gesucht? Hier ist, was meine Kollegen über mich gesagt haben",
+    "ARROW_ALT": "Pfeil zeigt auf erstes Testimonial",
+    "EVELYN_MARX": {
+      "NAME": "Ahmet B.",
+      "PROJECT": "Join",
+      "QUOTE": "„Er ist ein vertrauenswürdiger Teamplayer und kann mit dem Stress von Deadlines umgehen. Strukturiertes Arbeiten und klarer Code.“"
+    },
+    "JAMES_RUGMAN": {
+      "NAME": "Leon-Georg Leuning",
+      "PROJECT": "Kochwelt",
+      "QUOTE": "„Er ist eine verlässliche und freundliche Person. Arbeitet strukturiert und schreibt klaren Code. Ich empfehle ihn als Kollegen.“"
+    }
+  },
+  "LEGAL": {
+    "TITLE": "Impressum",
+    "INTRO": "Angaben gemäß § 5 E-Commerce-Gesetz (ECG):",
+    "SECTION": { "COMPANY": "Firmendaten", "RESPONSIBLE": "Verantwortlicher", "DISCLAIMER": "Haftungsausschluss" },
+    "COMPANY": {
+      "NAME": "Nuri Toker",
+      "ADDRESS": "Mechenseer Straße 12, 88316 Isny, Deutschland",
+      "PHONE": "Telefon: +49 174 3389049",
+      "EMAIL": "E-Mail: nuri.toker@yahoo.com"
+    },
+    "RESPONSIBLE": {
+      "TEXT": "Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV: Nuri Toker, Adresse wie oben."
+    },
+    "DISCLAIMER": {
+      "TEXT": "Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich."
+    }
+  },
+  "PRIVACY": {
+    "TITLE": "Datenschutz",
+    "INTRO": "Deine Privatsphäre ist mir wichtig. Diese Erklärung erläutert, wie ich deine Daten verarbeite.",
+    "SECTION": {
+      "CONTROLLER": "Datenverantwortlicher",
+      "DATA": "Erhobene Daten",
+      "COOKIE": "Cookies",
+      "RIGHTS": "Deine Rechte",
+      "CONTACT": "Kontakt"
+    },
+    "CONTROLLER": {
+      "NAME": "Nuri Toker",
+      "ADDRESS": "Mechenseer Straße 12, 88316 Isny, Deutschland",
+      "EMAIL": "E-Mail: nuri.toker@yahoo.com"
+    },
+    "DATA": {
+      "TEXT": "Ich erfasse nur die Daten, die du im Kontaktformular eingibst (Name, E-Mail, Nachricht) sowie anonymisierte Analysedaten für Verbesserungen."
+    },
+    "COOKIE": {
+      "TEXT": "Diese Seite verwendet Cookies für Basisfunktionen und Google Analytics. Du kannst Cookies in deinen Browser-Einstellungen deaktivieren."
+    },
+    "RIGHTS": {
+      "TEXT": "Du hast das Recht auf Auskunft, Berichtigung oder Löschung deiner persönlichen Daten. Kontaktiere mich dafür gerne jederzeit."
+    },
+    "CONTACT_TEXT": "Wenn du Fragen hast, schreibe mir bitte eine E-Mail an Nuri.Toker@yahoo.com."
+  },
+  "CONTACT": {
+    "HEADING": "Kontaktiere mich",
+    "INTRO": "Sie suchen Unterstützung im Web Development? Kontaktieren Sie mich – gemeinsam bringen wir Ihr Projekt voran.",
+    "SOCIAL": { "EMAIL_LABEL": "E-Mail", "PHONE_LABEL": "Tel", "EMAIL_ALT": "E-Mail", "PHONE_ALT": "Telefon" },
+    "SCROLL_UP_ALT": "Nach oben zum Hero",
+    "FORM": {
+      "SUBJECT_HIDDEN": "Neue Kontaktanfrage",
+      "NAME_LABEL": "Dein Name",
+      "NAME_PLACEHOLDER": "Dein Name",
+      "NAME_REQUIRED": "Name ist erforderlich.",
+      "NAME_MINLENGTH": "Name muss mindestens 2 Zeichen lang sein.",
+      "EMAIL_LABEL": "Deine E-Mail",
+      "EMAIL_PLACEHOLDER": "Deine E-Mail",
+      "EMAIL_REQUIRED": "E-Mail ist erforderlich.",
+      "EMAIL_INVALID": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+      "AGREE": "Ich habe die <a href=\"/privacy-policy\">Datenschutzrichtlinie</a> gelesen und stimme der Verarbeitung meiner Daten zu.",
+      "AGREE_REQUIRED": "Du musst der Datenschutzrichtlinie zustimmen.",
+      "MESSAGE_LABEL": "Deine Nachricht",
+      "MESSAGE_PLACEHOLDER": "Deine Nachricht",
+      "MESSAGE_REQUIRED": "Nachricht ist erforderlich.",
+      "MESSAGE_MINLENGTH": "Nachricht muss mindestens 10 Zeichen lang sein.",
+      "SEND": "Senden",
+      "SENDING": "Wird gesendet…",
+      "SUCCESS": "Danke für deine Nachricht! 🎉",
+      "CLOSE": "Schließen"
+    }
+  },
+  "FOOTER": {
+    "BRAND": "<NT>",
+    "ROLE": "Fullstack-Entwickler",
+    "COPYRIGHT": "© Nuri Toker 2026",
+    "LEGAL_NOTICE": "Impressum",
+    "PRIVACY_POLICY": "Datenschutz",
+    "SOCIAL": { "GITHUB_ALT": "GitHub", "EMAIL_ALT": "E-Mail", "LINKEDIN_ALT": "LinkedIn" }
+  }
+}

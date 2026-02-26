@@ -1,0 +1,51 @@
+<header class="site-header">
+  <div class="container">
+    <a href="/" class="logo">{{ "HEADER.LOGO" | translate }}</a>
+
+    <nav class="nav-links">
+      <a href="#about">{{ "NAV.WHY_ME" | translate }}</a>
+      <a href="#skills">{{ "NAV.SKILLS" | translate }}</a>
+      <a href="#projects">{{ "NAV.PROJECTS" | translate }}</a>
+      <a href="#footer">{{ "NAV.CONTACT" | translate }}</a>
+    </nav>
+
+    <div class="lang-toggle">
+      <span
+        [class.active]="currentLang === 
+'de'"
+        (click)="useLanguage('de')"
+      >DE</span> |
+      <span
+        [class.active]="currentLang === 'en'"
+        (click)="useLanguage('en')"
+      >EN</span>
+    </div>
+
+    <button class="mobile-toggle" type="button" (click)="toggleMobileMenu()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <div class="mobile-menu-overlay" *ngIf="mobileMenuOpen">
+    <div class="mobile-menu-header">
+      <a href="/" class="logo" (click)="toggleMobileMenu()">{{ "HEADER.LOGO" | translate }}</a>
+      <button class="close-btn" type="button" (click)="toggleMobileMenu()"></button>
+    </div>
+    <nav class="mobile-nav-links">
+      <a href="#about" (click)="toggleMobileMenu()">{{ "NAV.WHY_ME" | translate }}</a>
+      <a href="#skills" (click)="toggleMobileMenu()">{{ "NAV.SKILLS" | translate }}</a>
+      <a href="#projects" (click)="toggleMobileMenu()">{{ "NAV.PROJECTS" | translate }}</a>
+      <a href="#footer" (click)="toggleMobileMenu()">{{ "NAV.CONTACT" | translate }}</a>
+    </nav>
+    <div class="mobile-lang-toggle">
+      <span
+        [class.active]="currentLang === 'de'"
+        (click)="useLanguage('de')"
+      >DE</span> |
+      <span
+        [class.active]="currentLang === 'en'"
+        (click)="useLanguage('en')"
+      >EN</span>
+    </div>
+  </div>
+</header>

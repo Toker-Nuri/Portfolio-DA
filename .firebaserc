@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "portfolio-nuri-toker",
+    "prod": "portfolio-nuri-toker"
+  },
+  "targets": {},
+  "etags": {}
+}

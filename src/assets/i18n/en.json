@@ -1,0 +1,138 @@
+{
+  "NAV": { "WHY_ME": "Why me", "SKILLS": "Skills", "PROJECTS": "Projects", "CONTACT": "Contact" },
+  "HEADER": { "LOGO": "<NT>" },
+  "HERO": {
+    "CONTACT": "Contact me",
+    "SUBTITLE": "Frontend Developer",
+    "SCROLL_ALT": "Scroll to About"
+  },
+  "ABOUT": {
+    "PHOTO_ALT": "Profile photo",
+    "TITLE": "Why me",
+    "TEXT_PART1": "I bring a strong passion for web development and combine creative design with technical implementation. My focus is currently on frontend development, where I have already gained practical experience in implementing modern, user-friendly and responsive interfaces.",
+    "TEXT_PART2": "To complete my profile, I am currently taking backend training, which will enable me to develop complex server-side logic, database connections and interfaces in the future. This way, I combine a deep understanding of the entire web architecture – from appealing UI to performant backend logic.",
+    "I_AM_TITLE": "I am",
+    "BUTTON": "Let's talk",
+    "ICONS": {
+      "LOCATED": {
+        "IN_CITY": "Located in Isny",
+        "IN_CITY_HOVER": "Located in Isny"
+      },
+      "OPEN_TO_WORK_REMOTE": "Open to work remote",
+      "OPEN_TO_WORK_REMOTE_HOVER": "Open to work remote",
+      "OPEN_TO_RELOCATE": "Open to relocate",
+      "OPEN_TO_RELOCATE_HOVER": "Open to relocate"
+    }
+  },
+  "SKILLS": { "TITLE": "My Skills", "ICON_ALT": "{{skill}} icon" },
+  "PROJECTS": {
+    "TITLE": "My Projects",
+    "GITHUB": "GitHub",
+    "LIVE_TEST": "Live Test",
+    "IMAGE_ALT": "Screenshot of",
+    "JOIN": {
+      "TITLE": "Join",
+      "DESCRIPTION": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories."
+    },
+    "EL_POLLO_LOCO": {
+      "TITLE": "El Pollo Loco",
+      "DESCRIPTION": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen."
+    }
+  },
+  "TESTIMONIALS": {
+    "HEADING": "Need a teamplayer? Here’s what my colleagues said about me",
+    "ARROW_ALT": "Arrow pointing to first testimonial",
+    "EVELYN_MARX": {
+      "NAME": "Ahmet B.",
+      "PROJECT": "Join",
+      "QUOTE": "“He is a trustworthy teamplayer and can cope with the stress of deadlines. Structured work and clear code.”"
+    },
+    "JAMES_RUGMAN": {
+      "NAME": "Leon-Georg Leuning",
+      "PROJECT": "Kochwelt",
+      "QUOTE": "“He is a reliable and friendly person. Works in a structured way and writes clear code. I recommend him as a colleague.”"
+    }
+  },
+  "LEGAL": {
+    "TITLE": "Legal Notice",
+    "INTRO": "Information according to § 5 Austrian E-Commerce Act (ECG):",
+    "SECTION": {
+      "COMPANY": "Company Data",
+      "RESPONSIBLE": "Responsible Person",
+      "DISCLAIMER": "Disclaimer"
+    },
+    "COMPANY": {
+      "NAME": "Nuri Toker",
+      "ADDRESS": "Mechenseer Straße 12, 88316 Isny Germany",
+      "PHONE": "Phone: +49 174 3389049",
+      "EMAIL": "E-mail: nuri.toker@yahoo.com"
+    },
+    "RESPONSIBLE": {
+      "TEXT": "Person legally responsible under § 55 (2) RStV: Nuri Toker, address as above."
+    },
+    "DISCLAIMER": {
+      "TEXT": "Despite careful control of content, we assume no liability for the content of external links. The operators of linked pages are solely responsible for their content."
+    }
+  },
+  "PRIVACY": {
+    "TITLE": "Privacy Policy",
+    "INTRO": "Your privacy is important to me. This statement explains how I collect and use your personal data.",
+    "SECTION": {
+      "CONTROLLER": "Data Controller",
+      "DATA": "Collected Data",
+      "COOKIE": "Cookies",
+      "RIGHTS": "Your Rights",
+      "CONTACT": "Contact"
+    },
+    "CONTROLLER": {
+      "NAME": "Nuri Toker",
+      "ADDRESS": "Mechenseer Straße 12, 88316 Isny, Germany",
+      "EMAIL": "E-mail: nuri.toker@yahoo.com"
+    },
+    "DATA": {
+      "TEXT": "I collect only the data you provide via contact form (name, email, message) and anonymized analytics data for improvements."
+    },
+    "COOKIE": {
+      "TEXT": "This site uses cookies for basic functionality and Google Analytics. You can disable cookies in your browser settings."
+    },
+    "RIGHTS": {
+      "TEXT": "You have the right to access, rectify, or erase your personal data at any time. Please contact me if you wish to exercise these rights."
+    },
+    "CONTACT_TEXT": "If you have questions about this policy, please contact me at nuri.toker@yahoo.com."
+  },
+  "CONTACT": {
+    "HEADING": "Contact me",
+    "INTRO": "Are you looking for support in web development? Contact me – together we will advance your project.",
+    "SOCIAL": { "EMAIL_LABEL": "E-mail", "PHONE_LABEL": "Tel", "EMAIL_ALT": "E-Mail", "PHONE_ALT": "Phone" },
+    "SCROLL_UP_ALT": "Scroll to Hero",
+    "FORM": {
+      "SUBJECT_HIDDEN": "New contact request",
+      "NAME_LABEL": "Your Name",
+      "NAME_PLACEHOLDER": "Your Name",
+      "NAME_REQUIRED": "Name is required.",
+      "NAME_MINLENGTH": "Name must be at least 2 characters.",
+      "EMAIL_LABEL": "Your Email",
+      "EMAIL_PLACEHOLDER": "Your Email",
+      "EMAIL_REQUIRED": "Email is required.",
+      "EMAIL_INVALID": "Please enter a valid email address.",
+      "AGREE": "I’ve read the <a href=\"/privacy-policy\">privacy policy</a> and agree to the processing of my data as outlined.",
+      "AGREE_REQUIRED": "You must agree to the privacy policy.",
+      "MESSAGE_LABEL": "Your Message",
+      "MESSAGE_PLACEHOLDER": "Your Message",
+      "MESSAGE_REQUIRED": "Message is required.",
+      "MESSAGE_MINLENGTH": "Message must be at least 10 characters.",
+      "SEND": "Send",
+      "SENDING": "Sending…",
+      "SUCCESS": "Thank you for your message! 🎉",
+      "CLOSE": "Close"
+    }
+  },
+  "FOOTER": {
+    "BRAND": "<NT>",
+    "ROLE": "Fullstack Developer",
+    "COPYRIGHT": "© Nuri Toker 2026",
+    "LEGAL_NOTICE": "Legal notice",
+    "PRIVACY_POLICY": "Privacy policy",
+    "SOCIAL": { "GITHUB_ALT": "GitHub", "EMAIL_ALT": "Email", "LINKEDIN_ALT": "LinkedIn" }
+  }
+}
