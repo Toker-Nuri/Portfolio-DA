@@ -1,0 +1,78 @@
+<section id="projects" class="projects">
+  <div class="container projects__inner">
+    <h2 class="projects__title fade-in-up">
+      {{ 'PROJECTS.TITLE' | translate }}
+    </h2>
+
+    <div class="projects__list">
+      <div
+        class="project fade-in-up"
+        *ngFor="let p of projects; let i = index"
+        [class.reverse]="i % 2 === 1"
+        [style.transition-delay.ms]="i * 200"
+      >
+        <div class="project__image">
+          <img
+            [src]="p.imageUrl"
+            [alt]="
+              ( 'PROJECTS.IMAGE_ALT' | translate )
+              + ' '
+              + ( p.titleKey | translate )
+            "
+          />
+        </div>
+
+        <div class="project__buttons mobile">
+          <a
+            [href]="p.githubUrl"
+            target="_blank"
+            rel="noopener"
+            class="btn btn--outline"
+          >
+            {{ 'PROJECTS.GITHUB' | translate }}
+          </a>
+          <a
+            [href]="p.liveDemoUrl"
+            target="_blank"
+            rel="noopener"
+            class="btn btn--primary"
+          >
+            {{ 'PROJECTS.LIVE_TEST' | translate }}
+          </a>
+        </div>
+
+        <div>
+          <div class="project__info">
+            <h3 class="project__name">
+              {{ p.titleKey | translate }}
+            </h3>
+            <p class="project__tech">
+              {{ p.techStack.join(' | ') }}
+            </p>
+            <p class="project__desc">
+              {{ p.descriptionKey | translate }}
+            </p>
+          </div>
+          <div class="project__buttons desktop">
+            <a
+              [href]="p.githubUrl"
+              target="_blank"
+              rel="noopener"
+              class="btn btn--outline"
+            >
+              {{ 'PROJECTS.GITHUB' | translate }}
+            </a>
+            <a
+              [href]="p.liveDemoUrl"
+              target="_blank"
+              rel="noopener"
+              class="btn btn--primary"
+            >
+              {{ 'PROJECTS.LIVE_TEST' | translate }}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

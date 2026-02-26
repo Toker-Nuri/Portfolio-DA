@@ -1,0 +1,93 @@
+
+.testimonials {
+  padding: 6rem 2rem;
+  font-family: monospace;
+  background: transparent;
+
+  &__heading {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    font-size: 24px;
+    color: #E15544;
+    text-align: left;
+    max-width: 1200px;
+    margin: 0 auto 3rem;
+  }
+
+  &__wrapper {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  &__arrow {
+    width: 56px;
+    height: 56px;
+
+    @media (max-width: 800px) {
+      display: none;
+    }
+  }
+
+  &__grid {
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+    flex-wrap: wrap;
+
+
+    @media (max-width: 800px) {
+      flex-wrap: nowrap;             
+      overflow-x: auto;              
+      -webkit-overflow-scrolling: touch;
+      padding-bottom: 1rem;          
+      gap: 1.5rem;                   
+
+      scroll-snap-type: x mandatory;
+
+      
+      &::-webkit-scrollbar { display: none; }
+      
+    }
+  }
+
+  .testimonial {
+    flex: 0 0 297px;
+    max-width: 297px;
+    box-sizing: border-box;
+
+    @media (max-width: 800px) {
+      flex: 0 0 auto;                
+      scroll-snap-align: start;      
+    }
+
+    &__name {
+      margin: 0 0 0.5rem;
+      color: #E15544;
+      font-size: 24px;
+      font-family: 'Roboto Mono', monospace;
+      font-weight: 700;
+    }
+
+    &__project {
+      margin: 0 0 1rem;
+      color: #02F4BF;
+      font-size: 18px;
+      font-weight: 400;
+    }
+
+    &__quote {
+      margin: 0;
+      color: #02F4BF;
+      font-size: 18px;
+      line-height: 1.4;
+      white-space: normal;
+      word-break: break-word;
+    }
+
+    @media (max-width: 800px) {
+      border: 1px solid #02F4BF;
+      padding: 12px;
+    }
+  }
+}

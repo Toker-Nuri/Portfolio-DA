@@ -1,0 +1,26 @@
+<section id="testimonials" class="testimonials">
+  <h2 class="testimonials__heading">
+    {{ 'TESTIMONIALS.HEADING' | translate }}
+  </h2>
+
+  <div class="testimonials__wrapper">
+    <div class="testimonials__grid">
+      <img
+        src="assets/icons/Arrow.png"
+        alt="{{ 'TESTIMONIALS.ARROW_ALT' | translate }}"
+        class="testimonials__arrow"
+      />
+      <div class="testimonial" *ngFor="let t of testimonials">
+        <h3 class="testimonial__name">
+          {{ t.nameKey | translate }}
+        </h3>
+        <p class="testimonial__project">
+          {{ t.projectKey | translate }}
+        </p>
+        <p class="testimonial__quote">
+          {{ t.quoteKey | translate }}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

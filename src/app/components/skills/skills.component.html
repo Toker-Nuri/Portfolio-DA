@@ -1,0 +1,17 @@
+<section id="skills" class="skills">
+  <div class="container">
+    <h2 class="skills__title fade-in-up">
+      {{ 'SKILLS.TITLE' | translate }}
+    </h2>
+
+    <div class="skills__grid scale-in">
+      <div class="skill fade-in-up" *ngFor="let skill of skills; let i = index" [style.transition-delay.ms]="i * 100">
+        <img
+          class="skill__icon"
+          src="assets/icons/{{ skill.icon }}"
+          [attr.alt]="'SKILLS.ICON_ALT' | translate:{ skill: skill.name }"
+        />
+      </div>
+    </div>
+  </div>
+</section>
