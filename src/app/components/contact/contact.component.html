@@ -1,0 +1,182 @@
+<section id="contact" class="contact">
+  <div class="container contact__inner">
+    <h2 class="contact__heading fade-in-up">
+      {{ 'CONTACT.HEADING' | translate }}
+      <img
+        src="assets/icons/arrow-4.png"
+        alt=""
+        class="contact__heading-arrow"
+      />
+    </h2>
+
+    <div class="contact__intro-wrapper fade-in-left">
+      <div class="contact__intro-div">
+        <p class="contact__intro">
+          {{ 'CONTACT.INTRO' | translate }}
+        </p>
+      </div>
+      <div class="contact__details-wrapper">
+        <div class="contact__details">
+          <div class="detail">
+            <img src="assets/icons/mail.png" alt="{{ 'CONTACT.SOCIAL.EMAIL_ALT' | translate }}" />
+            <span>{{ 'CONTACT.SOCIAL.EMAIL_LABEL' | translate }}: nuri.toker&#64;yahoo.com</span>
+          </div>
+          <div class="detail">
+            <img src="assets/icons/phone.png" alt="{{ 'CONTACT.SOCIAL.PHONE_ALT' | translate }}" />
+            <span>{{ 'CONTACT.SOCIAL.PHONE_LABEL' | translate }}: +49 174 3389049</span>
+          </div>
+        </div>
+        <div>
+          <a href="#hero">
+            <img
+              class="arrow-up-img"
+              src="assets/icons/arrow-up.png"
+              alt="{{ 'CONTACT.SCROLL_UP_ALT' | translate }}"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <form
+      (submit)="submitContact($event)"
+      #contactForm="ngForm"
+      novalidate
+      class="contact__form-wrapper fade-in-up"
+    >
+      <input
+        type="hidden"
+        name="_subject"
+        value="{{ 'CONTACT.FORM.SUBJECT_HIDDEN' | translate }}"
+      />
+      <input type="hidden" name="_captcha" value="false" />
+
+      <div class="contact__left">
+        <div class="field-group">
+          <label for="name">{{ 'CONTACT.FORM.NAME_LABEL' | translate }}</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="{{ 'CONTACT.FORM.NAME_PLACEHOLDER' | translate }}"
+            [(ngModel)]="contact.name"
+            #name="ngModel"
+            required
+            minlength="2"
+          />
+          <div class="error-message" *ngIf="name.touched && name.invalid">
+            <span *ngIf="name.errors?.['required']">{{ 'CONTACT.FORM.NAME_REQUIRED' | translate }}</span>
+            <span *ngIf="name.errors?.['minlength']">{{ 'CONTACT.FORM.NAME_MINLENGTH' | translate }}</span>
+          </div>
+        </div>
+
+        <div class="field-group">
+          <label for="email">{{ 'CONTACT.FORM.EMAIL_LABEL' | translate }}</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="{{ 'CONTACT.FORM.EMAIL_PLACEHOLDER' | translate }}"
+            [(ngModel)]="contact.email"
+            #email="ngModel"
+            required
+            email
+          />
+          <div class="error-message" *ngIf="email.touched && email.invalid">
+            <span *ngIf="email.errors?.['required']">{{ 'CONTACT.FORM.EMAIL_REQUIRED' | translate }}</span>
+            <span *ngIf="email.errors?.['email']">{{ 'CONTACT.FORM.EMAIL_INVALID' | translate }}</span>
+          </div>
+        </div>
+
+        <div class="field-group field-group--checkbox desktop">
+          <input
+            type="checkbox"
+            id="agree"
+            name="agree"
+            [(ngModel)]="contact.agree"
+            #agree="ngModel"
+            required
+          />
+          <label for="agree" class="checkbox-label" [innerHTML]="'CONTACT.FORM.AGREE' | translate"></label>
+          <div class="error-message" *ngIf="agree.touched && agree.invalid">
+            <span>{{ 'CONTACT.FORM.AGREE_REQUIRED' | translate }}</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact__right">
+        <div class="field-group field-group--message">
+          <label for="message">{{ 'CONTACT.FORM.MESSAGE_LABEL' | translate }}</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="6"
+            placeholder="{{ 'CONTACT.FORM.MESSAGE_PLACEHOLDER' | translate }}"
+            [(ngModel)]="contact.message"
+            #message="ngModel"
+            required
+            minlength="10"
+          ></textarea>
+          <div class="error-message" *ngIf="message.touched && message.invalid">
+            <span *ngIf="message.errors?.['required']">{{ 'CONTACT.FORM.MESSAGE_REQUIRED' | translate }}</span>
+            <span *ngIf="message.errors?.['minlength']">{{ 'CONTACT.FORM.MESSAGE_MINLENGTH' | translate }}</span>
+          </div>
+        </div>
+
+
+
+        <div class="field-group field-group--checkbox mobile ">
+          <input
+            type="checkbox"
+            id="agree-mobile"
+            name="agree"
+            [(ngModel)]="contact.agree"
+            #agreeMobile="ngModel"
+            required
+          />
+          <label for="agree-mobile" class="checkbox-label" [innerHTML]="'CONTACT.FORM.AGREE' | translate"></label>
+          <div class="error-message" *ngIf="agreeMobile.touched && agreeMobile.invalid">
+            <span>{{ 'CONTACT.FORM.AGREE_REQUIRED' | translate }}</span>
+          </div>
+        </div>
+
+
+        <button
+          type="submit"
+          class="btn btn--send"
+          [disabled]="contactForm.invalid || sending"
+        >
+          {{ sending ? ('CONTACT.FORM.SENDING' | translate) : ('CONTACT.FORM.SEND' | translate) }}
+        </button>
+      </div>
+    </form>
+
+    <div class="contact__details-wrapper-mobile">
+      <div class="up-arrow-mobile">
+        <a href="#hero">
+          <img
+            class="arrow-up-img"
+            src="assets/icons/arrow-up.png"
+            alt="{{ 'CONTACT.SCROLL_UP_ALT' | translate }}"
+          />
+        </a>        
+      </div>
+      <div class="contact-information-mobile">
+        <div>
+          <div><img src="assets/icons/mail.png" alt="{{ 'CONTACT.SOCIAL.EMAIL_ALT' | translate }}"></div>
+          <div>{{ 'CONTACT.SOCIAL.EMAIL_LABEL' | translate }}: nuri.toker&#64;yahoo.com</div>
+        </div>
+        <div>
+          <div><img src="assets/icons/phone.png" alt="{{ 'CONTACT.SOCIAL.PHONE_ALT' | translate }}"></div>
+          <div>{{ 'CONTACT.SOCIAL.PHONE_LABEL' | translate }}: +49 174 3389049</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="overlay" *ngIf="showSuccess" (click)="closeModal()"></div>
+    <div class="success-modal" *ngIf="showSuccess">
+      <p>{{ 'CONTACT.FORM.SUCCESS' | translate }}</p>
+      <button class="btn" (click)="closeModal()">{{ 'CONTACT.FORM.CLOSE' | translate }}</button>
+    </div>
+  </div>
+</section>
