@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { HeroComponent } from '../hero/hero.component';
@@ -7,6 +7,7 @@ import { SkillsComponent } from '../skills/skills.component';
 import { ProjectsComponent } from '../projects/projects.component';
 import { TestimonialsComponent } from '../testimonials/testimonials.component';
 import { ContactComponent } from '../contact/contact.component';
+import { initScrollAnimations } from '../../scroll-animations';
 
 @Component({
   selector: 'app-home',
@@ -23,4 +24,11 @@ import { ContactComponent } from '../contact/contact.component';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent {}
+export class HomeComponent implements AfterViewInit {
+  ngAfterViewInit() {
+    // Initialisiere Scroll-Animationen nach dem Rendern der Component
+    setTimeout(() => {
+      initScrollAnimations();
+    }, 100);
+  }
+}

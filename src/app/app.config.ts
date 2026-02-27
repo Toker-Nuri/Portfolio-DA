@@ -1,5 +1,5 @@
 import { importProvidersFrom } from '@angular/core';
-import { provideRouter } from '@angular/router';
+import { provideRouter, withInMemoryScrolling } from '@angular/router';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
@@ -31,6 +31,9 @@ export const appConfig = {
       { path: 'legal', component: LegalNoticeComponent },
       { path: 'privacy-policy', component: PrivacyPolicyComponent },
       { path: '**', redirectTo: '' }
-    ])
+    ], withInMemoryScrolling({
+      scrollPositionRestoration: 'top',
+      anchorScrolling: 'enabled'
+    }))
   ]
 };

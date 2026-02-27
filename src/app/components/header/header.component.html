@@ -1,6 +1,6 @@
-<header class="site-header">
+<header id="header" class="site-header">
   <div class="container">
-    <a href="/" class="logo">{{ "HEADER.LOGO" | translate }}</a>
+    <a routerLink="/" class="logo">{{ "HEADER.LOGO" | translate }}</a>
 
     <nav class="nav-links">
       <a href="#about">{{ "NAV.WHY_ME" | translate }}</a>
@@ -28,7 +28,7 @@
 
   <div class="mobile-menu-overlay" *ngIf="mobileMenuOpen">
     <div class="mobile-menu-header">
-      <a href="/" class="logo" (click)="toggleMobileMenu()">{{ "HEADER.LOGO" | translate }}</a>
+      <a routerLink="/" class="logo" (click)="toggleMobileMenu()">{{ "HEADER.LOGO" | translate }}</a>
       <button class="close-btn" type="button" (click)="toggleMobileMenu()"></button>
     </div>
     <nav class="mobile-nav-links">
