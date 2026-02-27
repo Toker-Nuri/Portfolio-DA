@@ -31,7 +31,7 @@
     .footer__role {
       font-family: 'Roboto Mono', monospace;
       display: block;
-      font-size: 12px;
+      font-size: 16px;
       color: #E15544;
       font-weight: 500;
       line-height: 1;
@@ -48,12 +48,26 @@
     flex-direction: column;
 
     .footer__link {
-      font-size: 14px;
+      font-size: 16px;
       color: #E15544;
       text-decoration: none;
 
       &:hover {
         color: #00f3c4;
+      }
+
+      &:visited {
+        color: #E15544;
+      }
+
+      &:active {
+        color: #00f3c4;
+      }
+
+      &:focus {
+        color: #00f3c4;
+        outline: 2px solid #00f3c4;
+        outline-offset: 2px;
       }
     }
   }
@@ -107,7 +121,7 @@
       font-size: 36px;
       
       .footer__role {
-        font-size: 10px;
+        font-size: 16px;
         letter-spacing: 1px;
       }
     }
@@ -117,7 +131,7 @@
       gap: 0.5rem;
       
       .footer__link {
-        font-size: 12px;
+        font-size: 16px;
       }
     }
     

@@ -1,4 +1,3 @@
-
 .testimonials {
   padding: 6rem 2rem;
   font-family: monospace;
@@ -37,28 +36,55 @@
 
 
     @media (max-width: 800px) {
-      flex-wrap: nowrap;             
-      overflow-x: auto;              
+      flex-wrap: nowrap;
+      overflow-x: auto;
       -webkit-overflow-scrolling: touch;
-      padding-bottom: 1rem;          
-      gap: 1.5rem;                   
+      padding-bottom: 1rem;
+      gap: 1.5rem;
 
       scroll-snap-type: x mandatory;
 
-      
-      &::-webkit-scrollbar { display: none; }
-      
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
     }
   }
 
-  .testimonial {
+  &__indicators {
+    display: none;
+
+    @media (max-width: 800px) {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 1rem;
+
+      span {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: rgba(2, 244, 191, 0.3);
+        transition: background 0.3s;
+        cursor: pointer;
+
+        &.active {
+          background: #02F4BF;
+          box-shadow: 0 0 8px #02F4BF;
+        }
+      }
+    }
+  }
+
+  .testimonials {
     flex: 0 0 297px;
     max-width: 297px;
     box-sizing: border-box;
 
     @media (max-width: 800px) {
-      flex: 0 0 auto;                
-      scroll-snap-align: start;      
+      flex: 0 0 auto;
+      scroll-snap-align: start;
     }
 
     &__name {
@@ -89,5 +115,10 @@
       border: 1px solid #02F4BF;
       padding: 12px;
     }
+  }
+
+  @media (max-width: 400px) {
+    padding: 3rem 2rem 0;
+
   }
 }

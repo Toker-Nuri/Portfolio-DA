@@ -35,15 +35,16 @@
   display: flex;
   align-items: flex-start;
   gap: 6rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
   padding: 1rem;
   border-radius: 0.5rem;
   cursor: pointer;
+  border: 1px solid transparent;
 
   &:hover {
     transform: translateY(-8px);
     box-shadow: 0 4px 20px rgba(0, 243, 196, 0.3);
-    border: 1px solid #00f3c4;
+    border-color: #00f3c4;
   }
 
   &.reverse {
@@ -174,7 +175,7 @@
 
 @media (max-width: 400px) {
   .projects {
-    padding: 5rem 0;
+    padding: 0;
     
     &__inner {
       padding: 0 1rem;

@@ -4,7 +4,7 @@
   </h2>
 
   <div class="testimonials__wrapper">
-    <div class="testimonials__grid">
+    <div class="testimonials__grid" #scrollContainer (scroll)="onScroll($event)">
       <img
         src="assets/icons/Arrow.png"
         alt="{{ 'TESTIMONIALS.ARROW_ALT' | translate }}"
@@ -21,6 +21,10 @@
           {{ t.quoteKey | translate }}
         </p>
       </div>
+    </div>
+    <div class="testimonials__indicators">
+      <span *ngFor="let t of testimonials; let i = index" 
+            [class.active]="i === currentSlide"></span>
     </div>
   </div>
 </section>

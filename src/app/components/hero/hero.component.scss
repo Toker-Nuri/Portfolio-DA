@@ -1,6 +1,7 @@
 
 .hero {
   position: relative;
+  height: 100vh;
   
 
   &__inner {
@@ -62,13 +63,13 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: flex-end;
-      padding: 0 2rem;
+      padding: 20rem 2rem 0 2rem;
       text-align: left;
     }
 
     &__image {
       img {
-        height: 600px;
+        height: 670px;
       }
     }
 

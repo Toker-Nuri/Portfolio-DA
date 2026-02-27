@@ -5,7 +5,7 @@
     </h2>
 
     <div class="skills__grid scale-in">
-      <div class="skill fade-in-up" *ngFor="let skill of skills; let i = index" [style.transition-delay.ms]="i * 100">
+      <div class="skill fade-in-up" *ngFor="let skill of skills; let i = index" [style.transition-delay.ms]="i * 50">
         <img
           class="skill__icon"
           src="assets/icons/{{ skill.icon }}"

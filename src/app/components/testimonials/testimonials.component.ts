@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
 
@@ -19,6 +19,10 @@ interface Testimonial {
   styleUrls: ['./testimonials.component.scss']
 })
 export class TestimonialsComponent {
+  @ViewChild('scrollContainer') scrollContainer!: ElementRef;
+  
+  currentSlide = 0;
+  
   testimonials: Testimonial[] = [
     {
       nameKey: 'TESTIMONIALS.EVELYN_MARX.NAME',
@@ -31,4 +35,11 @@ export class TestimonialsComponent {
       quoteKey: 'TESTIMONIALS.JAMES_RUGMAN.QUOTE'
     }
   ];
+
+  onScroll(event: any) {
+    const scrollLeft = event.target.scrollLeft;
+    const itemWidth = event.target.querySelector('.testimonial')?.offsetWidth || 297;
+    const gap = 24; // 1.5rem gap
+    this.currentSlide = Math.round(scrollLeft / (itemWidth + gap));
+  }
 }

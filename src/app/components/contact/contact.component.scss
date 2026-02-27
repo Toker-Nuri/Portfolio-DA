@@ -81,6 +81,7 @@
   .field-group { 
     display: flex; 
     flex-direction: column;
+    position: relative;
     label { 
       font-size: 0.9rem; 
       color: #E15544; 
@@ -97,6 +98,7 @@
       outline: none;
       width: 100%;
       transition: border-color 0.2s;
+      margin-bottom: 1.25rem;
     }
     input::placeholder, textarea::placeholder {
       color: #00f3c4;
@@ -114,8 +116,11 @@
   .error-message {
     color: #ff3333;
     font-size: 12px;
-    margin-top: 0.25rem;
-    min-height: 1rem; 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1rem;
+    line-height: 1rem;
   }
 
   .field-group--checkbox {
@@ -151,7 +156,7 @@
       }
 
       a {
-        color: #E15544;
+        color: #ffffff !important;
         text-decoration: none;
         transition: color 0.2s ease;
       }
@@ -304,7 +309,7 @@
 
 @media (max-width: 400px) {
   .contact {
-    padding: 5rem 0;
+    padding: 3rem 0;
     
     &__inner {
       padding: 0 1rem;
@@ -322,7 +327,7 @@
     }
     
     &__intro {
-      font-size: 14px;
+      font-size: 16px;
       text-align: center;
     }
     
@@ -337,17 +342,17 @@
     
     .field-group {
       input, textarea {
-        font-size: 14px;
+        font-size: 16px;
         padding: 0.5rem;
       }
       
       label {
-        font-size: 0.8rem;
+        font-size: 16px;
       }
     }
     
     .field-group--checkbox label.checkbox-label {
-      font-size: 0.8rem;
+      font-size: 16px;
       padding-left: 1.5rem;
       
       &::before {
@@ -358,13 +363,13 @@
     
     .btn--send {
       width: 100px;
-      font-size: 14px;
+      font-size: 16px;
       padding: 0.5rem 1rem;
     }
     
     .contact-information-mobile {
       gap: 16px;
-      font-size: 14px;
+      font-size: 16px;
     }
   }
   

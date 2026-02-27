@@ -100,7 +100,7 @@
     "HEADING": "Kontaktiere mich",
     "INTRO": "Sie suchen Unterstützung im Web Development? Kontaktieren Sie mich – gemeinsam bringen wir Ihr Projekt voran.",
     "SOCIAL": { "EMAIL_LABEL": "E-Mail", "PHONE_LABEL": "Tel", "EMAIL_ALT": "E-Mail", "PHONE_ALT": "Telefon" },
-    "SCROLL_UP_ALT": "Nach oben zum Hero",
+    "SCROLL_UP_ALT": "Nach oben zum Header",
     "FORM": {
       "SUBJECT_HIDDEN": "Neue Kontaktanfrage",
       "NAME_LABEL": "Dein Name",
