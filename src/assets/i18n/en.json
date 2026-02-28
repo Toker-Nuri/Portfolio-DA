@@ -40,17 +40,17 @@
     }
   },
   "TESTIMONIALS": {
-    "HEADING": "Need a teamplayer? Here’s what my colleagues said about me",
+    "HEADING": "Need a teamplayer? Here's what my colleagues said about me",
     "ARROW_ALT": "Arrow pointing to first testimonial",
     "EVELYN_MARX": {
       "NAME": "Ahmet B.",
       "PROJECT": "Join",
-      "QUOTE": "“He is a trustworthy team player who remains confident even under time pressure. His structured way of working is reflected in clear and understandable code.”"
+      "QUOTE": ""He is a trustworthy team player who remains confident even under time pressure. His structured way of working is reflected in clear and understandable code.""
     },
     "JAMES_RUGMAN": {
       "NAME": "Leon-Georg Leuning",
       "PROJECT": "Kochwelt",
-      "QUOTE": "“He is a reliable and pleasant personality. His way of working is structured and his code is characterized by clarity. I can highly recommend him as a colleague.”"
+      "QUOTE": ""He is a reliable and pleasant personality. His way of working is structured and his code is characterized by clarity. I can highly recommend him as a colleague.""
     }
   },
   "LEGAL": {
@@ -115,7 +115,10 @@
       "EMAIL_PLACEHOLDER": "Your Email",
       "EMAIL_REQUIRED": "Email is required.",
       "EMAIL_INVALID": "Please enter a valid email address.",
-      "AGREE": "I’ve read the <a href=\"/privacy-policy\">privacy policy</a> and agree to the processing of my data as outlined.",
+      "AGREE": "I've read the <a href=\"/privacy-policy\">privacy policy</a> and agree to the processing of my data as outlined.",
+      "AGREE_TEXT": "I've read the",
+      "AGREE_LINK": "privacy policy",
+      "AGREE_SUFFIX": "and agree to the processing of my data as outlined.",
       "AGREE_REQUIRED": "You must agree to the privacy policy.",
       "MESSAGE_LABEL": "Your Message",
       "MESSAGE_PLACEHOLDER": "Your Message",

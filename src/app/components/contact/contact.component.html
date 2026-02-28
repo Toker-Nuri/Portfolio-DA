@@ -99,7 +99,11 @@
             #agree="ngModel"
             required
           />
-          <label for="agree" class="checkbox-label" [innerHTML]="'CONTACT.FORM.AGREE' | translate"></label>
+          <label for="agree" class="checkbox-label">
+            {{ 'CONTACT.FORM.AGREE_TEXT' | translate }}
+            <a [routerLink]="['/privacy-policy']">{{ 'CONTACT.FORM.AGREE_LINK' | translate }}</a>
+            {{ 'CONTACT.FORM.AGREE_SUFFIX' | translate }}
+          </label>
           <div class="error-message" *ngIf="agree.touched && agree.invalid">
             <span>{{ 'CONTACT.FORM.AGREE_REQUIRED' | translate }}</span>
           </div>
@@ -138,7 +142,11 @@
             #agreeMobile="ngModel"
             required
           />
-          <label for="agree-mobile" class="checkbox-label" [innerHTML]="'CONTACT.FORM.AGREE' | translate"></label>
+          <label for="agree-mobile" class="checkbox-label">
+            {{ 'CONTACT.FORM.AGREE_TEXT' | translate }}
+            <a [routerLink]="['/privacy-policy']">{{ 'CONTACT.FORM.AGREE_LINK' | translate }}</a>
+            {{ 'CONTACT.FORM.AGREE_SUFFIX' | translate }}
+          </label>
           <div class="error-message" *ngIf="agreeMobile.touched && agreeMobile.invalid">
             <span>{{ 'CONTACT.FORM.AGREE_REQUIRED' | translate }}</span>
           </div>

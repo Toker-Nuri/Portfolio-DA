@@ -156,13 +156,21 @@
       }
 
       a {
-        color: #ffffff !important;
-        text-decoration: none;
+        color: #E15544 !important;
+        text-decoration: underline;
         transition: color 0.2s ease;
       }
 
       a:hover {
-        color: #cc1c08;
+        color: #00f3c4;
+      }
+
+      a:visited {
+        color: #E15544 !important;
+      }
+
+      a:active {
+        color: #E15544 !important;
       }
     }
 

@@ -3,10 +3,10 @@
     <a routerLink="/" class="logo">{{ "HEADER.LOGO" | translate }}</a>
 
     <nav class="nav-links">
-      <a href="#about">{{ "NAV.WHY_ME" | translate }}</a>
-      <a href="#skills">{{ "NAV.SKILLS" | translate }}</a>
-      <a href="#projects">{{ "NAV.PROJECTS" | translate }}</a>
-      <a href="#footer">{{ "NAV.CONTACT" | translate }}</a>
+      <a [routerLink]="['/']" fragment="about">{{ "NAV.WHY_ME" | translate }}</a>
+      <a [routerLink]="['/']" fragment="skills">{{ "NAV.SKILLS" | translate }}</a>
+      <a [routerLink]="['/']" fragment="projects">{{ "NAV.PROJECTS" | translate }}</a>
+      <a [routerLink]="['/']" fragment="footer">{{ "NAV.CONTACT" | translate }}</a>
     </nav>
 
     <div class="lang-toggle">
@@ -32,10 +32,10 @@
       <button class="close-btn" type="button" (click)="toggleMobileMenu()"></button>
     </div>
     <nav class="mobile-nav-links">
-      <a href="#about" (click)="toggleMobileMenu()">{{ "NAV.WHY_ME" | translate }}</a>
-      <a href="#skills" (click)="toggleMobileMenu()">{{ "NAV.SKILLS" | translate }}</a>
-      <a href="#projects" (click)="toggleMobileMenu()">{{ "NAV.PROJECTS" | translate }}</a>
-      <a href="#footer" (click)="toggleMobileMenu()">{{ "NAV.CONTACT" | translate }}</a>
+      <a [routerLink]="['/']" fragment="about" (click)="toggleMobileMenu()">{{ "NAV.WHY_ME" | translate }}</a>
+      <a [routerLink]="['/']" fragment="skills" (click)="toggleMobileMenu()">{{ "NAV.SKILLS" | translate }}</a>
+      <a [routerLink]="['/']" fragment="projects" (click)="toggleMobileMenu()">{{ "NAV.PROJECTS" | translate }}</a>
+      <a [routerLink]="['/']" fragment="footer" (click)="toggleMobileMenu()">{{ "NAV.CONTACT" | translate }}</a>
     </nav>
     <div class="mobile-lang-toggle">
       <span
