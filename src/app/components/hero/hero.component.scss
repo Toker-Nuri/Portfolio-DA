@@ -67,8 +67,8 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: flex-end;
-      padding: 20rem 2rem 0 2rem;
       text-align: left;
+      height: calc(100vh - 100px);
     }
 
     &__image {
