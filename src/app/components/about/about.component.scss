@@ -134,13 +134,13 @@
   }
 
   .arrow-down-mobile{
-    width:150%;
+    width:80%;
     display: flex;
     justify-content: flex-start;
   }
 
   .arrow-reverse-mobile {
-    width:150%;
+    width:80%;
     display:flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -369,12 +369,21 @@
   
   .i-am-section-mobile {
     padding: 0 1rem;
+    width: 100%;
     
     .arrow-down-mobile,
     .arrow-reverse-mobile {
-      width: 120%;
+      width: 80%;
     }
+    
   }
+  .mobile-located {
+      width: 300px;
+    }
+
+    .mobile-located img {
+      width: 300px;
+    }
 }
 
 
