@@ -10,7 +10,7 @@ import { LegalNoticeComponent } from './components/legal-notice/legal-notice.com
 import { PrivacyPolicyComponent } from './components/privacy-policy/privacy-policy.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
-  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+  return new TranslateHttpLoader(http, '/assets/i18n/', '.json');
 }
 
 export const appConfig = {
